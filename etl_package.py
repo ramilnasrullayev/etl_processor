@@ -15,7 +15,7 @@ class DataTransformer:
         self.train_data = train_data
         self.test_data = test_data
         self.factor_type = factor_type
-        self.feature_columns = [col for col in self.test_data.columns if col.startswith('feature_type_1')]
+        self.feature_columns = [col for col in self.test_data.columns if col.startswith(f'feature_type_{self.factor_type}')]
 
     def standardize_features(self):
         for col in self.feature_columns:
