@@ -14,7 +14,7 @@
    cd etl_processor
    
    
-3.Install required dependencies 
+3. Install required dependencies 
 
    pip install -r requirements.txt
 
