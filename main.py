@@ -1,8 +1,8 @@
 from etl_package import *
 
 def main():
-    train_file = 'train_data.csv'
-    test_file = 'test_data.csv'
+    train_file = 'train.csv'
+    test_file = 'test.csv'
     output_file = 'test_transformed.csv'
 
     extractor = DataExtractor(train_file)
