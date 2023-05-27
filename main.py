@@ -3,7 +3,7 @@ from etl_package import *
 def main():
     train_file = 'data/train.csv'
     test_file = 'data/test.csv'
-    output_file = 'test_transformed.csv'
+    output_file = 'data/test_transformed.csv'
 
     extractor = DataExtractor(train_file)
     train_data = extractor.extract_data()
