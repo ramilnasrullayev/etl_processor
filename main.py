@@ -11,7 +11,7 @@ def main():
     extractor = DataExtractor(test_file)
     test_data = extractor.extract_data()
 
-    transformer = DataTransformer(train_data)
+    transformer = DataTransformer(train_data, test_data)
     transformed_data = transformer.process_data()
 
     loader = DataLoader(transformed_data, output_file)

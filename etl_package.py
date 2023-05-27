@@ -11,9 +11,10 @@ class DataExtractor:
     
 
 class DataTransformer:
-    def __init__(self, train_data,test_data):
+    def __init__(self, train_data,test_data, factor_type='1'):
         self.train_data = train_data
         self.test_data = test_data
+        self.factor_type = factor_type
         self.feature_columns = [col for col in self.test_data.columns if col.startswith('feature_type_1')]
 
     def standardize_features(self):
