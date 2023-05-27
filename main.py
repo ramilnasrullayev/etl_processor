@@ -1,7 +1,4 @@
-from project_etl_processor.etl_package import DataExtractor
-from project_etl_processor.etl_package import DataTransformer
-from project_etl_processor.etl_package import DataLoader
-
+from etl_package import *
 
 def main():
     train_file = 'train_data.csv'
